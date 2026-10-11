@@ -1,0 +1,87 @@
+/* PDF report action */
+.pdf-report-action {
+  width: 100%;
+  min-width: 0;
+  margin: 18px 0;
+}
+
+.pdf-report-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  max-width: 100%;
+  min-height: 46px;
+  padding: 13px 20px;
+  background: linear-gradient(135deg, #e8bd62, #c99432);
+  color: #171717;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.pdf-report-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+.pdf-report-button:active:not(:disabled) {
+  transform: scale(0.99);
+}
+
+.pdf-report-button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+  transform: none;
+}
+
+.pdf-report-button:focus-visible {
+  outline: 2px solid #f5c568;
+  outline-offset: 3px;
+}
+
+.pdf-report-message {
+  max-width: 100%;
+  margin-top: 10px;
+  color: #d9b45e;
+  font-size: 13px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .pdf-report-action {
+    margin: 15px 0;
+  }
+
+  .pdf-report-button {
+    width: 100%;
+    padding: 13px 15px;
+  }
+}
+
+/* Extra-small phones */
+@media (max-width: 360px) {
+  .pdf-report-button {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .pdf-report-message {
+    font-size: 12px;
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .pdf-report-button {
+    transition: none;
+  }
+}
