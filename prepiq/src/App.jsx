@@ -5,7 +5,7 @@ import Auth from "./Auth";
 import Assessment from "./Assessment";
 import Dashboard from "./Dashboard";
 
-const API_URL = "http://localhost:5000/api/assessments";
+const API_URL = "/api/assessments";
 
 function App() {
   const [showAuth, setShowAuth] = useState(false);

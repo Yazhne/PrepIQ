@@ -5,7 +5,7 @@ import AICareerCoach from "./AICareerCoach";
 import "./Dashboard.css";
 import Roadmap from "./RoadMap";
 
-const API_URL = "http://localhost:5000/api/assessments";
+const API_URL = "/api/assessments";
 
 const skills = [
   { key: "java", name: "Java" },

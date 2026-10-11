@@ -3,7 +3,7 @@ import { useState } from "react";
 import { jsPDF } from "jspdf";
 import "./PDFReportButton.css";
 
-const API_URL = "http://localhost:5000/api/assessments";
+const API_URL = "/api/assessments";
 
 function formatDate(value) {
   if (!value) return "Not available";

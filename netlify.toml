@@ -1,0 +1,18 @@
+[build]
+  command = "npm install --prefix server ^&^& npm run build --prefix prepiq"
+  publish = "prepiq/dist"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/api/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

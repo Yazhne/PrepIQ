@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./Auth.css";
 
-const API_URL = "http://localhost:5000/api/auth";
+const API_URL = "/api/auth";
 
 function Auth({ onBack }) {
   const [register, setRegister] = useState(false);

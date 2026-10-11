@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./AICareerCoach.css";
 
-const API_URL = "http://localhost:5000/api/ai/career-coach";
+const API_URL = "/api/ai/career-coach";
 
 const skillKeys = [
   "java",

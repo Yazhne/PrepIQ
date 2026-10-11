@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import "./RoadMap.css";
 
-const API_URL = "http://localhost:5000/api/roadmap";
+const API_URL = "/api/roadmap";
 
 function formatTime(minutes) {
   const hours = Math.floor(minutes / 60);
