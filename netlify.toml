@@ -1,5 +1,5 @@
 [build]
-  command = "npm install --prefix server ^&^& npm run build --prefix prepiq"
+  command = "npm install --prefix server && npm install --prefix prepiq && npm run build --prefix prepiq"
   publish = "prepiq/dist"
   functions = "netlify/functions"
 
